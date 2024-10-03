@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+// Definição da estrutura do nó da árvore binária
+typedef struct No{
+    int conteudo;
+    struct no *esquerda, *direita;
+}No;
+
+
+// Função para criar um novo nó
+typedef struct {
+    No *raiz;
+}arvb;
+void inseriresquerda (No *no,int valor);{
+    if(no->esquerda == NULL)
+    No *novo = (No*)malloc(sizeof(No));
+        novo->conteudo = valor;
+        novo->esquerda = NULL
+        novo->direita = NULL
+        no->esquerda = novo;
+
+}
+
+void inserirdireita (No *no ,int valor);{
+
+}
+void inserir (arvb *arv,int valor) {
+    if (arv->raiz == NULL) {
+        No *novo = (No*)malloc(sizeof(No));
+        novo->conteudo = valor;
+        novo->esquerda = NULL
+        novo->direita = NULL
+        arv->raiz = novo;
+        }
+else{
+    if(valor < arv->raiz->conteudo )
+        inseriresquerda(arv->raiz, valor);
+        else 
+            inserirdireita
+}
+}
+
+int main () {
+
+}
